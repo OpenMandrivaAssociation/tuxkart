@@ -17,7 +17,6 @@ Patch0:		%{name}-remove-O6.patch
 Patch1:		%{name}-gownsbow-drv.patch
 URL:		http://tuxkart.sourceforge.net/
 BuildRequires:	plib Mesa-common-devel MesaGLU-devel X11-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This is another game that stars your Favorite Hero: Tux, the Linux Penguin.
