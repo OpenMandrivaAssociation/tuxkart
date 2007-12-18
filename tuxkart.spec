@@ -34,15 +34,16 @@ This is another game that stars your Favorite Hero: Tux, the Linux Penguin.
 rm -rf $RPM_BUILD_ROOT
 %{makeinstall} bindir=$RPM_BUILD_ROOT%{_gamesbindir}
 
-install -d $RPM_BUILD_ROOT%{_menudir}
-cat > $RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}):\
-command="%{_gamesbindir}/%{name}"\
-title="Tuxkart"\
-longtitle="Karting with tux"\
-needs="x11"\
-icon="%{name}.png" \
-section="Amusement/Arcade"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application <<EOF
+
+Exec=%{_gamesbindir}/%{name}
+Name=Tuxkart
+Comment=Karting with tux
+Icon=%{name}
+Categories=Game;ArcadeGame;
 EOF
 
 install -m644 %{SOURCE11} -D $RPM_BUILD_ROOT%{_miconsdir}/%{name}.png
@@ -67,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %doc README CHANGES ChangeLog NEWS
 
 
