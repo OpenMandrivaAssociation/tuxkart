@@ -38,7 +38,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
 cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 [Desktop Entry]
 Type=Application <<EOF
-
 Exec=%{_gamesbindir}/%{name}
 Name=Tuxkart
 Comment=Karting with tux
