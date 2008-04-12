@@ -1,6 +1,6 @@
 %define	name	tuxkart
 %define	version	0.4.0
-%define	release	%mkrel 4
+%define	release	%mkrel 5
 
 Summary:	Tuxedo T. Penguin stars in Tuxkart
 Name:		%{name}
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
 cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 [Desktop Entry]
-Type=Application <<EOF
+Type=Application
 Exec=%{_gamesbindir}/%{name}
 Name=Tuxkart
 Comment=Karting with tux
@@ -70,5 +70,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_miconsdir}/%{name}.png
 %{_datadir}/applications/mandriva-%{name}.desktop
 %doc README CHANGES ChangeLog NEWS
-
-
