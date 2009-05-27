@@ -1,12 +1,12 @@
 %define	name	tuxkart
 %define	version	0.4.0
-%define	release	%mkrel 8
+%define	release	%mkrel 9
 
 Summary:	Tuxedo T. Penguin stars in Tuxkart
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-License:	GPL
+License:	GPLv2
 Group:		Games/Arcade
 Source:		%{name}-%{version}.tar.bz2
 Source1:	%{name}-mdkimgs.tar.bz2
