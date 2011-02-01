@@ -1,6 +1,6 @@
 %define	name	tuxkart
 %define	version	0.4.0
-%define	release	%mkrel 9
+%define	release	%mkrel 10
 
 Summary:	Tuxedo T. Penguin stars in Tuxkart
 Name:		%{name}
@@ -15,8 +15,11 @@ Source12:	%{name}-32x32.png
 Source13:	%{name}-48x48.png
 Patch0:		%{name}-remove-O6.patch
 Patch1:		%{name}-gownsbow-drv.patch
+Patch2:		tuxkart-0.4.0-link.patch
 URL:		http://tuxkart.sourceforge.net/
-BuildRequires:	plib Mesa-common-devel MesaGLU-devel X11-devel
+BuildRequires:	libx11-devel
+BuildRequires:	mesaglu-devel
+BuildRequires:	plib-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -26,14 +29,16 @@ This is another game that stars your Favorite Hero: Tux, the Linux Penguin.
 %setup -q -D -a 1
 %patch0 -p0
 %patch1 -p0
+%patch2 -p0
 
 %build
-%configure --bindir=%{_gamesbindir}
+autoreconf -fi
+%configure2_5x --bindir=%{_gamesbindir}
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{makeinstall} bindir=$RPM_BUILD_ROOT%{_gamesbindir}
+%{makeinstall_std}
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
 cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
