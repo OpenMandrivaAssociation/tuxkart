@@ -1,0 +1,14 @@
+--- ./configure.in.gege	Thu Aug 24 17:37:08 2000
++++ ./configure.in	Thu Aug 24 17:37:33 2000
+@@ -99,8 +99,9 @@
+     CFLAGS="$CFLAGS -I/usr/local/include -L/usr/local/lib"
+     CXXFLAGS="$CXXFLAGS -I/usr/local/include -L/usr/local/lib"
+   else
+-    CFLAGS="$CFLAGS -O6 -Wall"
+-    CXXFLAGS="$CXXFLAGS -O6 -Wall"
++#    CFLAGS="$CFLAGS -O6 -Wall"
++#    CXXFLAGS="$CXXFLAGS -O6 -Wall"
++	echo "Removed hardcoded -O6"
+   fi
+ else
+   CFLAGS="$CFLAGS -O6 -Wall $MACH -malign-double -I/usr/local/include -L/usr/local/lib"
