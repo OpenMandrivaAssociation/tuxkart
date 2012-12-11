@@ -79,3 +79,43 @@ rm -rf $RPM_BUILD_ROOT
 %{_miconsdir}/%{name}.png
 %{_datadir}/applications/mandriva-%{name}.desktop
 %doc README CHANGES ChangeLog NEWS
+
+
+%changelog
+* Tue Feb 01 2011 Funda Wang <fwang@mandriva.org> 0.4.0-10mdv2011.0
++ Revision: 634739
+- fix linkage
+
+* Wed May 27 2009 Jérôme Brenier <incubusss@mandriva.org> 0.4.0-9mdv2010.0
++ Revision: 380068
+- fix license (GPLv2)
+
+* Sun Aug 03 2008 Thierry Vignaud <tv@mandriva.org> 0.4.0-8mdv2009.0
++ Revision: 261706
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.4.0-7mdv2009.0
++ Revision: 254973
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Funda Wang <fwang@mandriva.org>
+    - fix desktop entry (bug#37493)
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Dec 18 2007 Thierry Vignaud <tv@mandriva.org> 0.4.0-4mdv2008.1
++ Revision: 132310
+- auto-convert XDG menu entry
+- kill re-definition of %%buildroot on Pixel's request
+- buildrequires X11-devel instead of XFree86-devel
+
+
+* Thu Nov 23 2006 Lenny Cartier <lenny@mandriva.com> 0.4.0-4mdv2007.0
++ Revision: 86607
+- Mkrel
+- Import tuxkart
+

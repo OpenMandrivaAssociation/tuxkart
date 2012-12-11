@@ -1,6 +1,3 @@
 sources:
-  "tuxkart-0.4.0.tar.bz2:"	ac8c07afef37e8a011be1ce76532455c63f8344f
-  "tuxkart-16x16.png:"	008ef73df697cb528c6a37dd0317b9a1b789c13b
-  "tuxkart-32x32.png:"	d25bfe647d7b695f9f096474886b6053edd79dcc
-  "tuxkart-48x48.png:"	6575cc9742481a48a440164feb695479ca400a0b
-  "tuxkart-mdkimgs.tar.bz2:"	66a4a45969f55efc9b6a23ab5d351196f8a74643
+  "tuxkart-0.4.0.tar.bz2": ac8c07afef37e8a011be1ce76532455c63f8344f
+  "tuxkart-mdkimgs.tar.bz2": 66a4a45969f55efc9b6a23ab5d351196f8a74643
