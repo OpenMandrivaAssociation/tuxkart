@@ -17,7 +17,7 @@ Patch0:		%{name}-remove-O6.patch
 Patch1:		%{name}-gownsbow-drv.patch
 Patch2:		tuxkart-0.4.0-link.patch
 URL:		http://tuxkart.sourceforge.net/
-BuildRequires:	libx11-devel
+BuildRequires:	pkgconfig(x11)
 BuildRequires:	mesaglu-devel
 BuildRequires:	plib-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
