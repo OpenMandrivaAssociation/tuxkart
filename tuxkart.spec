@@ -1,6 +1,6 @@
 %define	name	tuxkart
 %define	version	0.4.0
-%define	release	%mkrel 10
+%define release 	11
 
 Summary:	Tuxedo T. Penguin stars in Tuxkart
 Name:		%{name}
@@ -20,7 +20,6 @@ URL:		http://tuxkart.sourceforge.net/
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	mesaglu-devel
 BuildRequires:	plib-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This is another game that stars your Favorite Hero: Tux, the Linux Penguin.
