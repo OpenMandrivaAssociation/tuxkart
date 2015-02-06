@@ -1,6 +1,6 @@
 %define	name	tuxkart
 %define	version	0.4.0
-%define release 	11
+%define release 	12
 
 Summary:	Tuxedo T. Penguin stars in Tuxkart
 Name:		%{name}
