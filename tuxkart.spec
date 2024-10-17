@@ -16,7 +16,7 @@ Source13:	%{name}-48x48.png
 Patch0:		%{name}-remove-O6.patch
 Patch1:		%{name}-gownsbow-drv.patch
 Patch2:		tuxkart-0.4.0-link.patch
-URL:		http://tuxkart.sourceforge.net/
+URL:		https://tuxkart.sourceforge.net/
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	plib-devel
