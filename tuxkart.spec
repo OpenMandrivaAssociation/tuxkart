@@ -17,6 +17,11 @@ Patch0:		%{name}-remove-O6.patch
 Patch1:		%{name}-gownsbow-drv.patch
 Patch2:		tuxkart-0.4.0-link.patch
 URL:		https://tuxkart.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	plib-devel
